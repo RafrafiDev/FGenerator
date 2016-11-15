@@ -1,0 +1,44 @@
+{
+    "entity": "user",
+    "identifier": "id",
+    "attributes": [
+        {
+            "attribute": "id",
+            "type": "integer",
+            "constraints": [
+
+            ]
+        },
+        {
+            "attribute": "username",
+            "type": "string",
+            "constraints": [
+
+            ]
+        },
+        {
+            "attribute": "password",
+            "type": "string",
+            "constraints": [
+
+            ]
+        },
+        {
+            "attribute": "salt",
+            "type": "string",
+            "constraints": [
+
+            ]
+        },
+        {
+            "attribute": "roles",
+            "type": "array",
+            "constraints": [
+
+            ]
+        }
+    ],
+    "mappings": [
+
+    ]
+}

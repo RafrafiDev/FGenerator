@@ -1,0 +1,42 @@
+	<!DOCTYPE html>
+	<html>
+	<head>
+	    <meta charset="utf-8">
+	    <title ng-init="title='generated project'" ng-bind="title"></title>
+	    <base href="/TestGenerator/front/"/>
+
+	    <link rel="stylesheet" href="bower_components/angular-material/angular-material.css">
+	    <link href="bower_components/angular-material-data-table/dist/md-data-table.min.css" rel="stylesheet" type="text/css"/>
+	    <link rel="stylesheet" href="bower_components/angular-material-icons/angular-material-icons.css">
+	    <link rel="stylesheet" href="assets/css/doc.css">
+
+	</head>
+	<body>
+    <md-toolbar layout="row">
+      <h1>&nbsp Frontend project</h1>
+    </md-toolbar>
+     <div layout="row">
+
+     	<div flex="20" layout="column">
+     		<br> 
+         	<ul>
+    										<li><a ui-sref="fondativeGen.userlisting" > Show user</a></li>
+					<li><a ui-sref="testTest.postlisting" > Show post</a></li>
+<!--fd_moduleLink-->
+
+ 
+			</ul>
+
+    	 </div>
+         <div flex="80" layout="column" >
+    		<md-content flex="100" >
+ 				<div flex="90" ui-view=""></div>
+   			 </md-content>
+     	 </div>
+     </div>
+  
+<hr>
+    
+	    <script data-main="main" src="bower_components/requirejs/require.js"></script>
+	</body>
+	</html>

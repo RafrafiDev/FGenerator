@@ -1,0 +1,43 @@
+
+<h1> New post </h1>  <a ui-sref="testTest.postlisting" > back to list</a> <hr>
+<div layout="column" flex="100">
+<form name="myForm" ng-controller="postAddController" ng-submit="myForm.$valid && submit()" novalidate>
+
+
+<div>
+    <div>    
+                    <md-input-container md-is-error="myForm.sulg.$invalid && (myForm.$submitted || myForm.sulg.$dirty)">
+        <label>sulg</label>
+        <input type="text"   name="sulg" id="sulg" ng-model="obj.sulg">
+        <div ng-messages="myForm.sulg.$error" ng-if="myForm.$submitted || myForm.sulg.$touched" multiple>
+   
+       
+</div>
+    </md-input-container>
+
+
+    </div>
+</div>
+     
+<div>
+    <div>    
+                    <md-input-container md-is-error="myForm.name.$invalid && (myForm.$submitted || myForm.name.$dirty)">
+        <label>name</label>
+        <input type="text"   name="name" id="name" ng-model="obj.name">
+        <div ng-messages="myForm.name.$error" ng-if="myForm.$submitted || myForm.name.$touched" multiple>
+   
+       
+</div>
+    </md-input-container>
+
+
+    </div>
+</div>
+      
+      
+     
+<md-button class="md-primary md-raised" type="reset" ng-click="reset()">RESET</md-button>
+<md-button class="md-primary md-raised" type="input">SUBMIT</md-button>
+
+</form>
+</div>

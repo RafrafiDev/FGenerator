@@ -1,0 +1,65 @@
+
+<h1> New user </h1>  <a ui-sref="fondativeGen.userlisting" > back to list</a> <hr>
+<div layout="column" flex="100">
+<form name="myForm" ng-controller="userAddController" ng-submit="myForm.$valid && submit()" novalidate>
+
+
+<div>
+    <div>    
+                    <md-input-container md-is-error="myForm.username.$invalid && (myForm.$submitted || myForm.username.$dirty)">
+        <label>username</label>
+        <input type="text"   name="username" id="username" ng-model="obj.username">
+        <div ng-messages="myForm.username.$error" ng-if="myForm.$submitted || myForm.username.$touched" multiple>
+   
+       
+</div>
+    </md-input-container>
+
+
+    </div>
+</div>
+     
+<div>
+    <div>    
+                    <md-input-container md-is-error="myForm.password.$invalid && (myForm.$submitted || myForm.password.$dirty)">
+        <label>password</label>
+        <input type="text"   name="password" id="password" ng-model="obj.password">
+        <div ng-messages="myForm.password.$error" ng-if="myForm.$submitted || myForm.password.$touched" multiple>
+   
+       
+</div>
+    </md-input-container>
+
+
+    </div>
+</div>
+     
+<div>
+    <div>    
+                    <md-input-container md-is-error="myForm.salt.$invalid && (myForm.$submitted || myForm.salt.$dirty)">
+        <label>salt</label>
+        <input type="text"   name="salt" id="salt" ng-model="obj.salt">
+        <div ng-messages="myForm.salt.$error" ng-if="myForm.$submitted || myForm.salt.$touched" multiple>
+   
+       
+</div>
+    </md-input-container>
+
+
+    </div>
+</div>
+     
+<div>
+    <div>    
+                    
+
+    </div>
+</div>
+      
+      
+     
+<md-button class="md-primary md-raised" type="reset" ng-click="reset()">RESET</md-button>
+<md-button class="md-primary md-raised" type="input">SUBMIT</md-button>
+
+</form>
+</div>

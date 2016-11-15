@@ -1,0 +1,58 @@
+<h1>  user list  </h1>
+        <hr>
+ 
+<div >
+      <md-button class="md-raised md-primary" ui-sref="fondativeGen.userAdd()">New user</md-button>
+                  <md-input-container >
+        <label>Search user </label>
+        <input type="text" ng-model="search">
+        
+    </md-input-container>
+</div>
+
+<md-table-container>
+  <table md-table multiple ng-model="selected" md-progress="dummies">
+
+    <thead md-head >
+      <tr md-row>
+           
+            <th md-column ><span>id</span></th>
+            
+            <th md-column ><span>username</span></th>
+            
+            <th md-column ><span>password</span></th>
+            
+            <th md-column ><span>salt</span></th>
+            
+            <th md-column ><span>roles</span></th>
+            
+
+        <th md-column ><span>action</span></th>
+      </tr>
+    </thead>
+<!--ng-if="($index<=query.limit * query.page-1)&&($index>=(query.page - 1) * query.limit)-->
+    <tbody md-body>
+      <tr md-row ng-repeat="dummy in dummies | filter:search" ng-if="($index<=query.limit * query.page-1)&&($index>=(query.page - 1) * query.limit)">
+          
+          
+            <td md-cell>{{dummy.id }} </td>
+            
+            <td md-cell>{{dummy.username }} </td>
+            
+            <td md-cell>{{dummy.password }} </td>
+            
+            <td md-cell>{{dummy.salt }} </td>
+            
+            <td md-cell>{{dummy.roles }} </td>
+            
+        <td md-cell><md-button class="md-raised md-primary" ui-sref="fondativeGen.userdetail({id:dummy.id})">Details</md-button>
+        <md-button class="md-raised md-primary" ui-sref="fondativeGen.userupdate({id:dummy.id})">Update</md-button>
+        <md-button class="md-raised md-primary" ng-click="remove(dummy)">Remove</md-button>
+  
+  </td>
+      </tr>
+    </tbody>
+  </table>
+</md-table-container>
+<md-table-pagination md-limit="query.limit" md-limit-options="[5, 10, 20]" md-page="query.page" md-total="{{dummies.length}}">
+</md-table-pagination>

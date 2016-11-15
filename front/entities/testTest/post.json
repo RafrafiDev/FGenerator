@@ -1,0 +1,30 @@
+{
+    "entity": "post",
+    "identifier": "id",
+    "attributes": [
+        {
+            "attribute": "id",
+            "type": "integer",
+            "constraints": [
+
+            ]
+        },
+        {
+            "attribute": "sulg",
+            "type": "string",
+            "constraints": [
+
+            ]
+        },
+        {
+            "attribute": "name",
+            "type": "string",
+            "constraints": [
+
+            ]
+        }
+    ],
+    "mappings": [
+
+    ]
+}

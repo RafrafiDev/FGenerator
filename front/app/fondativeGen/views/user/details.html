@@ -1,0 +1,48 @@
+
+<h1>user {{dummy.id}}</h1>  <a ui-sref="fondativeGen.userlisting" > back to list</a> <hr>
+<md-list flex>
+            
+            <md-list-item class="md-2-line"  ng-if="dummy.id">
+                <div class="md-list-item-text">
+                  <div class="md-body-2">{{dummy.id }}</div>
+                  <p class="md-body-2">id</p>
+                </div>
+                <md-divider></md-divider>
+              </md-list-item>
+            
+            <md-list-item class="md-2-line"  ng-if="dummy.username">
+                <div class="md-list-item-text">
+                  <div class="md-body-2">{{dummy.username }}</div>
+                  <p class="md-body-2">username</p>
+                </div>
+                <md-divider></md-divider>
+              </md-list-item>
+            
+            <md-list-item class="md-2-line"  ng-if="dummy.password">
+                <div class="md-list-item-text">
+                  <div class="md-body-2">{{dummy.password }}</div>
+                  <p class="md-body-2">password</p>
+                </div>
+                <md-divider></md-divider>
+              </md-list-item>
+            
+            <md-list-item class="md-2-line"  ng-if="dummy.salt">
+                <div class="md-list-item-text">
+                  <div class="md-body-2">{{dummy.salt }}</div>
+                  <p class="md-body-2">salt</p>
+                </div>
+                <md-divider></md-divider>
+              </md-list-item>
+            
+            <md-list-item class="md-2-line"  ng-if="dummy.roles">
+                <div class="md-list-item-text">
+                  <div class="md-body-2">{{dummy.roles }}</div>
+                  <p class="md-body-2">roles</p>
+                </div>
+                <md-divider></md-divider>
+              </md-list-item>
+            
+            
+            
+            </md-list>
+</div>
