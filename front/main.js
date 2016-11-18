@@ -53,10 +53,6 @@ require.config({
             deps: ["angular","ngMaterial"],
          //   exports : 'mdtable'
         },
-        'angular-icons' :{
-            deps: ["angular"],
-         //   exports : 'mdtable'
-        }
         },
 	deps: ['app/app.module']
 });

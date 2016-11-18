@@ -28,6 +28,8 @@
 !bin/console
 !bin/symfony_requirements
 /vendor/
+!/vendor/Fondative
+/.idea
 
 # Assets and user uploads
 /web/bundles/
@@ -58,8 +60,6 @@
 
 /tests/Fixtures/app/cache/*
 /tests/Fixtures/app/logs/*
-
-/vendor
 
 /front/bower_components
 
